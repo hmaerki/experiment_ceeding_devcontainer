@@ -1,3 +1,15 @@
+https://github.com/tobyjwebb/post-ceedling-demo
+https://blog.zaleos.net/unit-testing-c-code-with-ceedling-and-cmock/
+
+Prepare image
+  make dockerimage
+
+Within image
+  docker run --rm -ti --name zaleos-ubuntu -v $(pwd):/root/basic-ceedling-example zaleos-ubuntu
+    make urltest
+    make -C external_libs
+    ceedling test:all
+
 # post-ceedling-demo
 
 This is a basic Ceedling example used to illustrate some of the work we have been doing @ Zaleos on the Ceedling framework.

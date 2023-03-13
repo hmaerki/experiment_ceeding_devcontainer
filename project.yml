@@ -97,6 +97,7 @@
   :load_paths:
     - "#{Ceedling.load_path}"
   :enabled:
+    - xml_tests_report
     - stdout_pretty_tests_report
     - module_generator
     - command_hooks
